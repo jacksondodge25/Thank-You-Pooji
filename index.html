@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A thank-you memory page for Pooji from the Dodge family's India trip, Summer 2026."
+    />
+    <title>Thank You, Pooji</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23fff7ea'/%3E%3Ccircle cx='32' cy='32' r='17' fill='%23e9a11b'/%3E%3Cpath d='M32 17c5 8 10 13 18 15-8 2-13 7-18 15-5-8-10-13-18-15 8-2 13-7 18-15z' fill='%231f5f4a'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="ambient-dots" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="hero__media reveal">
+          <img
+            src="images/Pooji.jpeg"
+            alt="Pooji during the Dodge family's India trip"
+          />
+        </div>
+
+        <div class="hero__content reveal">
+          <p class="kicker">Dodge family India trip · Summer 2026</p>
+          <h1 id="hero-title">Thank You, Pooji</h1>
+          <p class="hero__subtitle">
+            From the Dodge family’s India trip — Summer 2026
+          </p>
+          <p class="hero__copy">
+            Thank you for making our time in India easier, warmer, funnier, and
+            much more memorable.
+          </p>
+        </div>
+      </section>
+
+      <section class="thank-you section-pad reveal" aria-label="Thank-you note">
+        <div class="section-label">A proper thank-you</div>
+        <div class="thank-you__panel">
+          <p>
+            Pooji, you went so far above and beyond for us on this trip. You
+            helped with the kids, translated constantly, coordinated plans,
+            got us out on date nights, helped with the house staff, arranged
+            plenty of pampering, bought food, traveled with us, babysat, and
+            somehow made everything feel easy.
+          </p>
+          <p>
+            Most importantly, you made the kids feel loved and gave Faith and
+            Jackson time to actually enjoy a few date nights together.
+          </p>
+        </div>
+      </section>
+
+      <section class="memories section-pad" aria-labelledby="memories-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">Little moments, big memories</p>
+            <h2 id="memories-title">Snapshots from India</h2>
+          </div>
+          <p>
+            A few favorite pieces of the trip: family time, train rides, date
+            nights, and the easy joy Pooji helped make possible.
+          </p>
+        </div>
+
+        <div id="photo-grid" class="photo-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          Add photos to the <strong>images</strong> folder and refresh this page
+          to fill the memory wall.
+        </div>
+      </section>
+
+      <section class="keepsake section-pad" aria-labelledby="keepsake-title">
+        <div class="sparkle-field" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">All the little bright spots</p>
+            <h2 id="keepsake-title">A softer, happier kind of chaos</h2>
+          </div>
+          <p>
+            The best trips have a little motion blur: kids laughing, everyone
+            moving, plans changing, and somebody making it all feel possible.
+          </p>
+        </div>
+
+        <div id="keepsake-wall" class="keepsake-wall" aria-live="polite"></div>
+      </section>
+
+      <section class="closing reveal" aria-labelledby="closing-title">
+        <p class="section-label">With love from the Dodges</p>
+        <h2 id="closing-title">We’re so grateful.</h2>
+        <p>
+          This trip simply wouldn’t have been the same without you. Thank you
+          for making India even more special for our family.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
